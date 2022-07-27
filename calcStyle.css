@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000000;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.main{
+    width: 50%;
+    border: 2px solid blue; 
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'clear abs divideX powerOf2 rootOf2 backspace'
+    'clear seven eight nine multiply divide'
+    'power four five six add substract'
+    'root one two three add equals'
+    'modulo zero zero point add equals';
+}
+
+.main > button{
+    border: 2px solid blue;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+    color: #ae8003;
+    cursor: pointer;
+}
+
+button:not(.numbers):hover{
+    color: #fac023;
+}
+
+#fieldDiv{
+    width: 48%;
+    height: 50px;
+    padding: 10px;
+
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid blue;
+    /* border: 2px solid #46a560; */
+    color: #ff3e1e;
+
+    cursor: pointer;
+    align-self: flex-start;
+    text-align: end;
+}
+
+.field{
+    margin-top: 10px;
+}
