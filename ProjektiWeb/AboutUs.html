@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title> k-Course </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="aboutUsCSS.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="navBar.css">
+        <script src = "aboutUsJS.js" defer></script>
+    </head>
+    <body style = "background-color: black;">
+        <section class = "secHeader">
+            <nav>
+                <a href = "AboutUs.html"><img src = ""></a>
+                <div class = "navs">        
+                    <ul>
+                        <li><a href = "Main.html"> HOME </a></li>
+                        <li><a href = ""> ABOUT </a></li>
+                        <li><a href = "calculatorMain.html"> CALCULATOR </a></li>
+                        <li><a href = "Contact.html"> CONTACT </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1> About Us </h1>
+        </section>
+
+        <section class = "aboutUs">
+            <div class = "row">
+                <div class = "aboutColumn">
+                    <h1> Our Web Learning Website </h1>
+                    <p class = "specialWriting" style = "margin-bottom: 35px;";> </p>
+                    <a href = "Main.html" class = "aboutBtn secondBtn"> Explore now </a>
+                </div>
+                <div class = "aboutColumn">
+                    <img src = "https://content.techgig.com/photo/82051686/5-Signs-that-programming-is-not-for-you.jpg">
+                </div>
+            </div>
+        </section>
+        <p class = "line" style ="margin-bottom: 100px;"></p>
+        
+        <div class = "mainSlider">
+            <div class = "carousel" data-carousel>
+                <button class = "carousel-button prev" data-carousel-button = "prev">&#8656;</button>
+                <button class = "carousel-button next" data-carousel-button = "next">&#8658;</button>
+                <ul data-slides> 
+                    <li class = "slide" data-active>
+                        <img src = "https://c4.wallpaperflare.com/wallpaper/453/129/282/html5-hyper-text-markup-language-html-wallpaper-preview.jpg" alt = "">
+                    </li>
+                    <li class = "slide">
+                        <img src = "https://armyyazilim.com/wp-content/uploads/2019/10/css.png" alt = "">
+                    </li>
+                    <li class = "slide">
+                        <img src = "https://wallpaperbat.com/img/343227-javascript-wallpaper-javascript.jpg" alt = "">
+                    </li>
+                    <li class = "slide">
+                        <img src = "https://miro.medium.com/max/1200/1*EntHChgUyirgbZ9A3zTxkA.png" alt = "">
+                    </li>
+                    <li class = "slide">
+                        <img src = "https://i.pinimg.com/originals/60/17/da/6017da3ed8f203fe979b16dae1ad2259.png" alt = "">
+                    </li>
+                    <li class = "slide">
+                        <img src = "https://wallpapercave.com/wp/wp7733036.png" alt = "">
+                    </li>
+                    <li class = "slide">
+                        <img src = "http://apprand.com/wp-naughtycontent/uploads/2016/06/jQuery-debouncing-events.jpg" alt = "">
+                    </li>
+                    <li class = "slide">
+                        <img src = "https://wallpaperaccess.com/full/5393409.jpg" alt = "">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <p class = "line" style ="margin-top: 100px; margin-bottom: 75px"></p>
+        <h1 class = "lastH" margin-top: 50px;> Social Media </h1>
+        
+        <footer style = "margin-top: 90px;">
+            <ul class = "bottom">
+                <li><i class = "fa fa-facebook"></i></li>
+                <li><i class = "fa fa-twitter"></i></li>
+                <li><i class = "fa fa-instagram"></i></li>
+                <li><i class = "fa fa-youtube"></i></li>
+            </ul>
+        </footer>
+    </body>
+    <script>
+        
+        var i = 0;
+        var text = "Our Website is a brand new one, but despite that the quality of the people who teach is nothing but impressive. We currently have courses on HTML, CSS and Javascript, all of which at the moment are about Front-End Programming. However, despite that most of our courses available are about Front-End programming languages, it doesn't mean that that won't change soon since we are actively looking to create new courses that focus on Front-End languages/framewords but also on Back-End languages/frameworks.";
+
+        function write(){
+            if(i < text.length){
+                document.querySelector('.specialWriting').innerHTML += text.charAt(i++);
+                setTimeout(write, 25);
+            }
+        }
+
+        window.addEventListener('onload', write())
+    </script>
+</html>
