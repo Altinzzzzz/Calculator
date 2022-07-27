@@ -12,9 +12,8 @@ body{
 }
 
 .main{
-    width: 50%;
-    border: 2px solid blue; 
-
+    margin-top: 200px;
+    border: 2px solid blue;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
@@ -31,18 +30,29 @@ body{
     font-size: 30px;
     font-weight: bold;
     background-color: black;
-    color: #ae8003;
+    color: #be9625;
     cursor: pointer;
 }
 
 button:not(.numbers):hover{
-    color: #fac023;
+    color: #fcbd11;
+}
+
+button:hover{
+    border: 2px solid #ff3e1e;
+    transition: 0.8s;
+}
+
+button:focus{
+    border: 3px solid #ff3e1e;
 }
 
 #fieldDiv{
-    width: 48%;
+    margin-top: 50px;
+    margin-bottom: 80px;
     height: 50px;
     padding: 10px;
+    width: 50%;
 
     font-size: 30px;
     font-weight: bold;
@@ -57,4 +67,14 @@ button:not(.numbers):hover{
 
 .field{
     margin-top: 10px;
+}
+
+#fieldDiv:hover{
+    border: 3px solid #ff3e1e;
+    color: #fcbd11;;
+    transition: 0.7s;
+}
+
+button{
+    transition: all 0.7s;
 }
